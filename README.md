@@ -11,21 +11,22 @@ VI. Tugas
 
 
 
-  b. Asumsi nama anda stD02001, maka edit semua profile yang ada yaitu:
 
-  /home/stD02001/.bash_profile 
+   b. Asumsi nama anda stD02001, maka edit semua profile yang ada yaitu:
+
+   /home/stD02001/.bash_profile 
    
-  /home/stD02001/.bash_login 
+   /home/stD02001/.bash_login 
    
-  /home/mahasiswa/.profile 
+   /home/mahasiswa/.profile 
    
-  /home/mahasiswa/.bashrc
+   /home/mahasiswa/.bashrc
 
    Ganti nama /home/mahasiswa dengan nama anda sendiri. Pada setiap file tersebut, cantumkan instruksi echo, misalnya pada /home/mahasiswa/.bash_profile:
 
    echo "Profile dari .bash_profile"
 
-  Lakukan hal yang sama untuk file lainnya, sesuaikan tampilan dengan nama file yang bersangkutan.
+   Lakukan hal yang sama untuk file lainnya, sesuaikan tampilan dengan nama file yang bersangkutan.
 
    c. Jalankan instruksi substitute user, kemudian keluar dengan perintah exit sebagai berikut:
 

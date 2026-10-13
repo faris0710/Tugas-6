@@ -11,25 +11,25 @@ VI. Tugas
 
 
 
-   b. Asumsi nama anda stD02001, maka edit semua profile yang ada yaitu:
+      b. Asumsi nama anda stD02001, maka edit semua profile yang ada yaitu:
 
-   /home/stD02001/.bash_profile /home/stD02001/.bash_login /home/mahasiswa/.profile /home/mahasiswa/.bashrc
+      /home/stD02001/.bash_profile /home/stD02001/.bash_login /home/mahasiswa/.profile /home/mahasiswa/.bashrc
 
-   Ganti nama /home/mahasiswa dengan nama anda sendiri. Pada setiap file tersebut, cantumkan instruksi echo, misalnya pada /home/mahasiswa/.bash_profile:
+      Ganti nama /home/mahasiswa dengan nama anda sendiri. Pada setiap file tersebut, cantumkan instruksi echo, misalnya pada /home/mahasiswa/.bash_profile:
 
-   echo "Profile dari .bash_profile"
+      echo "Profile dari .bash_profile"
 
-   Lakukan hal yang sama untuk file lainnya, sesuaikan tampilan dengan nama file yang bersangkutan.
+      Lakukan hal yang sama untuk file lainnya, sesuaikan tampilan dengan nama file yang bersangkutan.
 
-   c. Jalankan instruksi substitute user, kemudian keluar dengan perintah exit sebagai berikut:
+      c. Jalankan instruksi substitute user, kemudian keluar dengan perintah exit sebagai berikut:
 
-   $ su mahasiswa $ exit
+      $ su mahasiswa $ exit
 
-   kemudian gunakan opsi – sebagai berikut:
+      kemudian gunakan opsi – sebagai berikut:
 
-   $ su - mahasiswa $ exit
+      $ su - mahasiswa $ exit
 
-   Jelaskan perbedaan kedua utilitas tersebut.
+      Jelaskan perbedaan kedua utilitas tersebut.
 
 3. Prompt String (PS)
    a. Edit file .bash_profile, ganti prompt PS1 dengan '>'. Instruksi export diperlukan dengan parameter nama variable tersebut, agar perubahan variable PS1          dikenal oleh shell.

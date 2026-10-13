@@ -1,126 +1,134 @@
+# Tugas-6
+
 VI. Tugas
-
-1. Eksekusi seluruh profile yang ada:
-   a. Edit file /etc/profile dan tampilkan pesan sebagai berikut:
-
-   echo "Profile dari /etc/profile"
-
-
-
-<img width="792" height="610" alt="Screenshot 2026-10-13 091826" src="https://github.com/user-attachments/assets/3fb329a3-c6df-4625-9f18-91126bc9f8ae" />
-
-
-
-
-   b. Asumsi nama anda stD02001, maka edit semua profile yang ada yaitu:
-
-   /home/stD02001/.bash_profile 
+1. Eksekusi seluruh profile yang ada :
    
-   /home/stD02001/.bash_login 
+a. Edit file profile /etc/profile dan tampilkan pesan sebagai berikut :
+echo “Profile dari /etc/profile”
+
+<img width="498" height="186" alt="1a" src="https://github.com/user-attachments/assets/38f60c0d-d51d-4dfb-b525-93bd693d246b" />
+
+
+
+b. Asumsi nama anda stD02001, maka edit semua profile yang ada yaitu :
+
+<img width="800" height="600" alt="1b" src="https://github.com/user-attachments/assets/0be56189-94e7-4662-915b-d4598770d951" />
+
+
+
+Ganti nama /home/mahasiswa dengan nama anda sendiri. Pada setiap
+file tersebut, cantumkan instruksi echo, misalnya pada /home/
+mahasiswa/.bash_profile :
+echo “Profile dari .bash_profile”
+Lakukan hal yang sama untuk file lainnya, sesuaikan tampilan dengan nama file
+yang bersangkutan.
+
+
+c. Jalankan instruksi subtitute user, kemudian keluar dengan perintah exit sebagai
+berikut:
+
+<img width="800" height="600" alt="1c" src="https://github.com/user-attachments/assets/73ff237e-eacb-49ee-94a7-2b6b3c01a72c" />
+
+
+2. Prompt String (PS)
    
-   /home/mahasiswa/.profile 
-   
-   /home/mahasiswa/.bashrc
+a. Edit file .bash_profile, ganti prompt PS1 dengan ‘>’. Instruksi export diperlukan
+dengan parameter nama variable tersebut, agar perubahan variable PS1 dikenal
+oleh semua shell
 
-   Ganti nama /home/mahasiswa dengan nama anda sendiri. Pada setiap file tersebut, cantumkan instruksi echo, misalnya pada /home/mahasiswa/.bash_profile:
+<img width="800" height="600" alt="2a per" src="https://github.com/user-attachments/assets/985cd7bf-3e1b-498a-ab04-421c8cb81ea1" />
 
-   echo "Profile dari .bash_profile"
 
-   Lakukan hal yang sama untuk file lainnya, sesuaikan tampilan dengan nama file yang bersangkutan.
+b. Eksperimen hasil PS1 :
 
-   c. Jalankan instruksi substitute user, kemudian keluar dengan perintah exit sebagai berikut:
+<img width="487" height="141" alt="2a" src="https://github.com/user-attachments/assets/1bd89550-9254-4e80-b04a-8d143e4c1bb5" />
 
-   $ su mahasiswa $ exit
 
-   kemudian gunakan opsi – sebagai berikut:
+3. Logout
 
-   $ su - mahasiswa $ exit
+<img width="800" height="600" alt="3 tugas 6" src="https://github.com/user-attachments/assets/cc0420a9-808c-48f7-a7d9-7c023bff80de" />
 
-   Jelaskan perbedaan kedua utilitas tersebut.
 
-3. Prompt String (PS)
-   a. Edit file .bash_profile, ganti prompt PS1 dengan '>'. Instruksi export diperlukan dengan parameter nama variable tersebut, agar perubahan variable PS1          dikenal oleh shell.
+4. Bash script
+a. Buat 3 buah script p1.sh, p2.sh, p3.sh dengan isi masing-masing :
+p1.sh
+#! /bin/bash
 
-   PS1='> ' export PS1
+<img width="800" height="600" alt="4 a 1" src="https://github.com/user-attachments/assets/0f0660f7-c709-4b40-8f1b-6a5f66f8fa2a" />
 
-   b. Eksperimen hasil PS1:
 
-   $ PS1="! > " 69 > PS1="\d > " Mon Sep 23 > PS1="\t > " 10:10:20 > PS1="Saya=\u > " Saya=mahasiswa > PS1="\w > " ~ > PS1=\h >"
+p2.sh
+#! /bin/bash
 
-4. Logout
-   Edit file .bash_logout, tampilkan pesan dan tahan selama 5 detik, sebelum eksekusi logout.
+<img width="800" height="600" alt="4 a 2" src="https://github.com/user-attachments/assets/e7f69573-940f-48bf-bf6a-1e0b11e1cb79" />
 
-   Echo "Terima kasih atas sesi yang diberikan" Sleep 5 clear
 
-   Bash script
-   a. Buat 3 buah script p1.sh, p2.sh, p3.sh dengan isi masing-masing:
+p3.sh
+#! /bin/bash
 
-   p1.sh
+<img width="800" height="600" alt="4 a 3" src="https://github.com/user-attachments/assets/312adaad-cb48-45f1-bf6c-2e9ad48c0aeb" />
 
-   #!/bin/bash echo "Program p1" ls -l
 
-   p2.sh
+b. Jalankan script tersebut sebagai berikut :
+<img width="800" height="600" alt="4b1" src="https://github.com/user-attachments/assets/daf3eb2f-009f-47ac-a6ae-654c0ef8633a" />
 
-   #!/bin/bash echo "Program p2" who
+<img width="800" height="600" alt="4b2" src="https://github.com/user-attachments/assets/6c83d474-9807-4e48-a442-9d6616a0363c" />
 
-   p3.sh
+<img width="800" height="600" alt="42b3" src="https://github.com/user-attachments/assets/917f964f-a8aa-445d-94ca-69f623c95ab6" />
 
-   #!/bin/bash echo "Program p3" ps x
+<img width="800" height="600" alt="4b4" src="https://github.com/user-attachments/assets/f3fcecae-5dfb-440b-b707-309c2c799364" />
 
-   b. Jalankan script tersebut sebagai berikut:
-
-   $ ./p1.sh ; ./p3.sh ; ./p2.sh
-
-   $ ./p1.sh &
-
-   $ ./p1.sh & ./p2.sh & ./p3.sh &
 
 5. Jobs
-   a. Buat shell-script yang melakukan loop dengan nama nyawaktu.sh, setiap 10 detik, kemudian menyimpan tanggal dan jam pada file hasil.
+a. Buat shell-script yang melakukan loop dengan nama pwaktu.sh, setiap 10 detik,
+kemudian menyimpan tanggal dan jam pada file hasil.
 
-   #!/bin/bash
+<img width="800" height="600" alt="5 tugas 6" src="https://github.com/user-attachments/assets/7ff208ae-8337-4880-891f-ccbec82bd376" />
 
-   while [ true ] do date >> hasil sleep 10 done
 
-   b. Jalankan sebagai background, kemudian jalankan satu program (utilitas find) di background sebagai berikut:
+b. Jalankan sebagai background; kemudian jalankan satu program (utilitas find) di
+background sebagai berikut :
 
-   $ jobs
+<img width="800" height="600" alt="5b" src="https://github.com/user-attachments/assets/d6f69617-eaf3-4b65-99c2-dfb229e76399" />
 
-   $ find . -print > files 2>/dev/null &
 
-6. jobs
+c. Jadikan program ke 1 sebagai foreground, tekan ^Z dan kembalikan program
+tersebut ke background
 
-   c. Jadikan program ke 1 sebagai foreground, tekan ^Z dan kembalikan program tersebut ke background.
+<img width="800" height="600" alt="5c" src="https://github.com/user-attachments/assets/7c5d89ad-4a64-47bd-b1c5-2b0c879105fc" />
 
-   $ fg %1
 
-   $ bg
+d. Stop program background dengan utilitas kill
 
-   d. Stop program background dengan utilitas kill
+<img width="800" height="600" alt="5d" src="https://github.com/user-attachments/assets/69d289c1-175b-45a5-91e7-4e67969414f9" />
 
-   $ ps x
 
-   $ kill [Nomor PID]
 
-7. History
-   a. Ganti nilai HISTSIZE dari 1000 menjadi 20
+6. History
+a. Ganti nilai HISTSIZE dari 1000 menjadi 20
 
-   $ HISTSIZE=20
+<img width="800" height="600" alt="6a1" src="https://github.com/user-attachments/assets/2a427807-571d-438c-8ff2-fc3bcfc869e0" />
 
-   $ h
 
-   b. Gunakan fasilitas history dengan mengedit instruksi baris ke 5 dari instruksi yang terakhir dilakukan
+b. Gunakan fasilitas history dengan mengedit instruksi baris ke 5 dari instruksi yang
+terakhir dilakukan
 
-   $ !-5
+<img width="800" height="600" alt="6b" src="https://github.com/user-attachments/assets/9be2fa93-46ab-4b38-a178-ecacbd7dd857" />
 
-   c. Ulangi instruksi yang terakhir. Gunakan juga ^P dan ^N untuk bernavigasi pada history buffer
 
-   $ !!
+c. Ulangi instruksi yang terakhir. Gunakan juga ^P dan ^N untuk bernavigasi pada
+history bufer
 
-   d. Ulangi instruksi pada history buffer nomor 150
+<img width="800" height="600" alt="6c" src="https://github.com/user-attachments/assets/d7ec46af-e14d-4e26-b4c6-82ddbd6ecf2f" />
 
-   $ !150
 
-   e. Ulangi instruksi dengan prefix "ls"
+d. Ulangi instruksi pada history bufer nomor 150
 
-   $ !ls
+
+<img width="800" height="600" alt="6d" src="https://github.com/user-attachments/assets/727dad04-33fe-49af-9672-a0ef3833bff4" />
+
+
+e. Ulangi instruksi dengan prefix “ls”
+
+<img width="800" height="600" alt="6e" src="https://github.com/user-attachments/assets/d1d302b8-9e79-482d-8d67-22300dfc1c32" />
+

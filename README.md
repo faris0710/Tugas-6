@@ -11,7 +11,7 @@ VI. Tugas
 
 
 
-   b. Asumsi nama anda stD02001, maka edit semua profile yang ada yaitu:
+  b. Asumsi nama anda stD02001, maka edit semua profile yang ada yaitu:
 
    /home/stD02001/.bash_profile 
    
